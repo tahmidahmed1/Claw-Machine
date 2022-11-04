@@ -1,0 +1,24 @@
+
+State Machine - |LogicalStep_Lab4_top|Grappler:inst11|current_state
+Name current_state.release_close_state current_state.press_open_state current_state.press_close_state current_state.release_open_state 
+current_state.release_open_state 0 0 0 0 
+current_state.press_close_state 0 0 1 1 
+current_state.press_open_state 0 1 0 1 
+current_state.release_close_state 1 0 0 1 
+
+State Machine - |LogicalStep_Lab4_top|Extender:inst10|current_state
+Name current_state.push_retraction_state current_state.push_extension_state current_state.extend_state current_state.retract_state current_state.full_extend_state current_state.full_retract_state 
+current_state.full_retract_state 0 0 0 0 0 0 
+current_state.full_extend_state 0 0 0 0 1 1 
+current_state.retract_state 0 0 0 1 0 1 
+current_state.extend_state 0 0 1 0 0 1 
+current_state.push_extension_state 0 1 0 0 0 1 
+current_state.push_retraction_state 1 0 0 0 0 1 
+
+State Machine - |LogicalStep_Lab4_top|XY_Motion:inst9|current_state
+Name current_state.flashing_error_state current_state.error_state current_state.release_state current_state.press_state current_state.original_state 
+current_state.original_state 0 0 0 0 0 
+current_state.press_state 0 0 0 1 1 
+current_state.release_state 0 0 1 0 1 
+current_state.error_state 0 1 0 0 1 
+current_state.flashing_error_state 1 0 0 0 1 
