@@ -1,0 +1,61 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'XY_Motion:inst9|current_state.error_state'
+Slack : -4.906
+TNS   : -4.906
+
+Type  : Setup 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -4.645
+TNS   : -111.932
+
+Type  : Setup 'Synch_Inverter2:inst1|stages_pb2[1]'
+Slack : -3.502
+TNS   : -6.638
+
+Type  : Setup 'Clkin_50'
+Slack : -2.359
+TNS   : -49.619
+
+Type  : Hold 'Synch_Inverter2:inst1|stages_pb2[1]'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Hold 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Hold 'Clkin_50'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Hold 'XY_Motion:inst9|current_state.error_state'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Recovery 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -3.053
+TNS   : -65.202
+
+Type  : Removal 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : 1.450
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Clkin_50'
+Slack : -3.000
+TNS   : -53.558
+
+Type  : Minimum Pulse Width 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -1.487
+TNS   : -63.941
+
+Type  : Minimum Pulse Width 'XY_Motion:inst9|current_state.error_state'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Synch_Inverter2:inst1|stages_pb2[1]'
+Slack : 0.428
+TNS   : 0.000
+
+------------------------------------------------------------
